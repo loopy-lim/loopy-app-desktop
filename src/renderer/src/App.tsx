@@ -1,7 +1,6 @@
-import Versions from './components/Versions'
+import { RouterProvider } from 'react-router-dom'
+import { router } from './routers'
 
-function App(): JSX.Element {
-  return <Versions></Versions>
+export function App() {
+  return <RouterProvider router={router} />
 }
-
-export default App
